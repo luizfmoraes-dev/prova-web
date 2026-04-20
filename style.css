@@ -11,6 +11,11 @@
     --gray: #ccc;
     --darkgray: #666;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     color:var(--bege);
     font-family: "Quicksand", sans-serif;
@@ -160,10 +165,21 @@ iframe{
 }
 
 .btn-discover{
+    font-family: "Varela Round", sans-serif;
     background-color: var(--bege);
+    color: var(--nav);
     padding: 10px;
     border-radius: 30px;
     cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.btn-discover:hover{
+    transform: scale(1.1);
+    background-color: var(--nav);
+    color: var(--bege);
+
 }
 
 
