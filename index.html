@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descubra o Brasil</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <body id="home">
@@ -27,16 +30,60 @@
                     <a class="item" href="#discover">Descubra</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                     <a class="item">Destinos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Norte</a></li>
+                        <li><a href="#">Nordeste</a></li>
+                        <li><a href="#">Centro-Oeste</a></li>
+                        <li><a href="sudeste-turismo.html">Sudeste</a></li>
+                        <li><a href="">Sul</a></li>
+                    </ul>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                     <a class="item">Gastronomia</a>
+                    <ul class="submenu">
+                        <li><a href="#">Norte</a></li>
+                        <li><a href="#">Nordeste</a></li>
+                        <li><a href="#">Centro-Oeste</a></li>
+                        <li><a href="sudeste-gastronomia.html">Sudeste</a></li>
+                        <li><a href="#">Sul</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+    <aside class="travel-tips">
+        <h3>Dicas do Guatá</h3>
+        <div class="tip-item">
+            <h4>Quando visitar Piracicaba?</h4>
+            <p>Agosto é o mês da Festa das Nações! Ótima oportunidade para provar pratos do mundo todo na Rua do Porto.</p>
+        </div>
+        
+        <div class="tip-item">
+            <h4>Check-in no Rio</h4>
+            <p>Para o Cristo Redentor, tente agendar o primeiro horário da manhã para evitar filas e garantir as melhores fotos.</p>
+        </div>
+
+        <div class="ad-box">
+            <span>Publicidade</span>
+            <p>Reserve seu Guia Local com 10% de desconto usando o cupom: <strong>GUATA10</strong></p>
+        </div>
+        
+        <div class="tip-item">
+            <h4>OBS:</h4>
+            <p>Redirecionamentos só estão disponiveis para o sudeste, por enquanto.</p>
+        </div>
+    </aside>
 
     <section class="hero">
         <div class="hero-content">
@@ -55,55 +102,62 @@
         
             <div class="text-container">
                 <h1>O seu próximo caminho começa por aqui</h1>
-                <p>Guatá é mais que viajar, é descobrir. 
-                    Explore destinos inesquecíveis e garanta sua vaga em aventuras selecionadas pela Brasil Encantado.
-                </p>
+                <p>Explore o Brasil Encantado com o Guatá. Garanta sua aventura!</p>
+                <a class="btn-discover">Explorar Agora</a>
             </div>
         </div>
     </section>
 
-        <main>
+        <main class="main-container">
 
             <section id="discover" class="explore">
                 <h2>Seu Próximo Check-in</h2>
                 <ul class="local-list">
                     <li>
-                        <article class="local">
-                            <header>
-                                <img src="">
-                                <h3>Museu da água</h3>
+                        <article class="place-card">
+                            <header class="place-content">
+                                <img src="assets/Museu_da_agua.png" alt="Um museu de água em Piracicaba">
+                                <h3>Museu da Água</h3>
                                 <small>Piracicaba - SP</small>
+                                <p>
+                                    História e arquitetura às margens do Rio Piracicaba, com um dos visuais mais bonitos da cidade.
+                                </p>
                             </header>
                         </article>
                     </li>
 
                     <li>
-                        <article>
-                            <header>
+                        <article class="place-card">
+                            <header class="place-content">
+                                <img src="assets/jc.png" alt="O ponto turistico Cristo Redentor">
                                 <h3>Cristo Redentor</h3>
                                 <small>Rio de janeiro - RJ</small>
+                                <p>A maior celebração da arquitetura brasileira e uma das sete maravilhas do mundo moderno.</p>
                             </header>
                         </article>
                     </li>
                 </ul>
 
+                <h2>Deguste o Brasil</h2>
                 <ul class="food-list">
                     <li>
-                        <article class="food">
-                            <header>
-                                <img src="">
+                        <article class="food-card">
+                            <header class="food-content">
+                                <img src="assets/pastelcapi.png" alt="Pastel com formato de capivara">
                                 <h3>Pastel de Capivara</h3>
                                 <small>Piracicaba - SP</small>
+                                <p>Uma homenagem divertida à moradora mais ilustre das margens do Rio Piracicaba.</p>
                             </header>
                         </article>
                     </li>
 
                     <li>
-                        <article class="food">
-                            <header>
-                                <img src="">
-                                <h3>Pastel de Capivara</h3>
+                        <article class="food-card">
+                            <header class="food-content">
+                                <img src="assets/feijoada.png" alt="feijoada do Rio de Janeiro">
+                                <h3>Feijoada Carioca</h3>
                                 <small>Piracicaba - SP</small>
+                                <p>O prato que é o coração do Rio: uma explosão de sabores acompanhada de couve, farofa e muita história.</p>
                             </header>
                         </article>
                     </li>
